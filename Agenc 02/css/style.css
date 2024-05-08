@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* <--------------------------------Navbar------------------------------------> */
+.navbar {
+  padding-top: 57px;
+  position: absolute;
+  width: 100%;
+  z-index: 999999;
+}
+.navbar .navbar-nav {
+  column-gap: 67px;
+}
+.navbar .navbar-nav .nav-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #4756df;
+}
+.navbar .navbar-nav .nav-item.active a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+  color: #4756df;
+}
+.mybtn {
+  display: inline-block;
+  background: #6a4df4;
+  border-radius: 10px;
+  padding: 21px 81px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #fff;
+}
+/* <--------------------------------Navbar------------------------------------> */
+
+/* <--------------------------------Bannar------------------------------------> */
+.bannar_inner {
+  padding: 315px 0px 176px;
+  position: relative;
+  z-index: 1;
+  height: 896px;
+}
+.bannar_img_1{
+  background: url(../img/bannar03\ \(1\).jpg) no-repeat center;
+  background-size: cover;
+}
+.bannar_img_2{
+  background: url(../img/bannar02.png) no-repeat center;
+  background-size: cover;
+}
+.bannar_img_3{
+  background: url(../img/bannar04.jpg) no-repeat center;
+  background-size: cover;
+}
+.bannar_img_4{
+  background: url(../img/bannar03\ \(1\).jpg) no-repeat center;
+  background-size: cover;
+}
+.bannar_inner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.bannar_inner .container {
+  width: 995px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bannar_heading .container h1 {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+  width: 950px;
+  margin: 0 auto;
+}
+.bannar_heading .container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: #fff;
+  padding: 51px 0px 40px;
+  width: 621px;
+  margin: 0 auto;
+}
+#bannar {
+  position: relative;
+}
+#bannar .slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 53px;
+  transform: translateX(-50%);
+  display: flex !important;
+  column-gap: 2px;
+}
+#bannar .slick-dots button {
+  border-radius: 100%;
+  background: #4756df;
+  height: 24px;
+  width: 24px;
+  font-size: 0;
+  border: 0;
+}
+#bannar .slick-active button {
+  border: 7px solid #fff;
+}
+.bannar_main{
+  position: relative;
+}
+.bannar_heading{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+/* <--------------------------------Bannar------------------------------------> */
+/* <--------------------------------Brand------------------------------------> */
+#brand {
+  background: #e0fff9;
+  border-radius: 20px;
+  height: 300px;
+  width: 1320px;
+  margin: 171px auto 149px auto;
+  padding: 85px 0 0 50px;
+}
+#brand .container .col-lg-4 span {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
+  color: #6a4df4;
+  padding-bottom: 15px;
+}
+#brand .container .col-lg-4 h2 {
+  font-weight: 600;
+  font-size: 35px;
+  color: #151515;
+}
+#brand .container .col-lg-8 .col h2 {
+  font-weight: 700;
+  font-size: 50px;
+  color: #151515;
+  padding-bottom: 20px;
+}
+#brand .container .col-lg-8 .col p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #737373;
+}
+/* <--------------------------------Brand------------------------------------> */
+/* <--------------------------------Provider------------------------------------> */
+#provider {
+  padding: 0px 0 103px;
+}
+#provider .container .head {
+  width: 609px;
+  margin: 0 auto;
+}
+#provider .container .head h2 {
+  font-weight: 700;
+  font-size: 45px;
+  color: #151515;
+}
+#provider .container .head p {
+  padding: 20px 0 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: #737373;
+}
+#provider .container .service .row {
+  justify-content: space-between;
+  row-gap: 24px;
+}
+#provider .container .service .col-lg-4 {
+  border-radius: 20px;
+  width: 424px;
+  height: 428px;
+  padding: 80px 49px 47px;
+}
+/* #provider .container .service .col-lg-4:hover{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    cursor: pointer;
+} */
+#provider .container .service .row .active {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  cursor: pointer;
+}
+#provider .container .service .col-lg-4 h3 {
+  padding: 40px 0 20px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  color: #151515;
+}
+#provider .container .service .col-lg-4 p {
+  width: 326px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: #737373;
+}
+/* <--------------------------------Provider------------------------------------> */
+/* <--------------------------------Recent Work------------------------------------> */
+#recent {
+  background: #f3f3f3;
+  padding: 300px 0px;
+}
+#recent .head_re h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 45px;
+  color: #151515;
+}
+#recent .head_re p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #737373;
+    padding: 20px 0px 106px;
+    width: 620px;
+    margin: 0 auto;
+}
+.recent_gallery .row{
+    row-gap: 24px;
+}
+.recent_card{
+    background: #fff;
+    border-radius: 20px;
+    width: 424px;
+    height: 457px;
+}
+.recent_card h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #151515;
+    margin: 30px 0px 10px;
+}
+.recent_card p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: #737373;
+    width: 340px;
+    margin: 0 auto;
+    padding: 10px 0px 30px;
+}
+/* <--------------------------------Recent Work------------------------------------> */
